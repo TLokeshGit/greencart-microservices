@@ -1,0 +1,90 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*.db
+
+# Environment variables
+.env
+*.env
+
+# Virtual environments
+venv/
+ENV/
+env/
+*.egg-info/
+*.egg
+
+# Logs
+*.log
+*.sqlite3
+*.sqlite3.backup
+logs/
+debug.log
+
+# Migrations
+**/migrations/
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.sublime-project
+*.sublime-workspace
+
+# Pytest cache
+.pytest_cache/
+
+# MacOS system files
+.DS_Store
+
+# Django static and media files
+media/
+uploads/
+
+# FastAPI alembic migrations
+alembic/versions/
+alembic.ini
+generated_docs/
+
+# Node modules (if frontend integration)
+node_modules/
+npm-debug.log
+
+# Build files
+dist/
+build/
+*.tar.gz
+*.zip
+
+# Compiled wheels and egg files
+*.whl
+*.egg
+
+# Temporary files
+*.tmp
+*.bak
+~$
+tmp/
+temp/
+.temp/
+
+# Pipenv or Poetry (dependency management)
+Pipfile
+Pipfile.lock
+poetry.lock
+
+# Requirements lockfiles
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Local development files
+db.sqlite3
+coverage/
+test_results/
+*.coverage
+
+# Ignore generated docs
+docs/_build/
+.DS_Store
+.venv/
+staticfiles/
