@@ -6,12 +6,9 @@ This is the backend service for the GreenCart application, built using Django an
 
 - [Project Description](#project-description)
 - [Installation](#installation)
-- [Configuration](#configuration)
 - [Running the Application](#running-the-application)
 - [API Documentation](#api-documentation)
-- [Testing](#testing)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Project Description
 
