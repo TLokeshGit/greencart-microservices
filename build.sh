@@ -2,7 +2,7 @@
 
 echo "🚀 Installing dependencies..."
 pip install --upgrade pip
-pip install -r requirements.txt
+pip install -r django_backend/requirements.txt
 
 echo "⚙️ Applying migrations..."
 python manage.py migrate
