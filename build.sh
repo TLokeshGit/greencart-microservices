@@ -4,7 +4,7 @@ echo "🚀 Installing dependencies..."
 pip install --upgrade pip
 pip install -r django_backend/requirements.txt
 
-export DJANGO_SETTINGS_MODULE=django_backend.django_backend.settings
+export DJANGO_SETTINGS_MODULE=django_backend.settings
 echo "Using DJANGO_SETTINGS_MODULE: [$DJANGO_SETTINGS_MODULE]"
 
 echo "⚙️ Applying migrations..."
