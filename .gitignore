@@ -1,2 +1,4 @@
 greencart-frontend/
 .DS_Store
+.vscode/
+.env
