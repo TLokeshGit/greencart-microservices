@@ -1,5 +1,5 @@
-greencart-frontend/
-.DS_Store
 .vscode/
-.env
-logs
+venv/
+greencart-frontend/
+logs/
+.DS_Store
