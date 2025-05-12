@@ -1,4 +1,3 @@
-# filepath: /Users/lokesh/Desktop/ALL/greencart-microservices/build.sh
 #!/usr/bin/env bash
 set -o errexit
 set -o pipefail
@@ -8,8 +7,8 @@ echo "🚀 Installing dependencies..."
 pip install --upgrade pip
 pip install -r django_backend/requirements.txt
 
-# ✅ Add this so Python knows where to find 'django_backend'
-export PYTHONPATH="${PYTHONPATH}:$(pwd)"
+# ✅ Safely export PYTHONPATH for both local and Render
+export PYTHONPATH="${PYTHONPATH:-}:$(pwd)"
 
 echo "⚙️ Applying migrations..."
 python django_backend/manage.py migrate --noinput
