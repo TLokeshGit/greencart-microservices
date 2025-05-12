@@ -3,7 +3,7 @@ services:
     name: greencart-backend
     env: python
     buildCommand: ./build.sh
-    startCommand: PYTHONPATH=./django_backend gunicorn django_backend.wsgi:application
+    startCommand: gunicorn django_backend.wsgi:application
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: django_backend.settings
