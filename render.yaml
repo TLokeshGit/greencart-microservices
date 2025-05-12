@@ -3,10 +3,10 @@ services:
     name: greencart-backend
     env: python
     buildCommand: ./build.sh
-    startCommand: PYTHONPATH=. gunicorn django_backend.wsgi:application
+    startCommand: PYTHONPATH=. gunicorn django_backend.django_backend.wsgi:application
     envVars:
       - key: DJANGO_SETTINGS_MODULE
-        value: django_backend.settings
+        value: django_backend.django_backend.settings
       - key: DATABASE_URL
         fromDatabase:
           name: greencart-db # ⚠️ Change to your actual DB name if different
