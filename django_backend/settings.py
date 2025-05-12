@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     "rest_framework_simplejwt.token_blacklist",
     "drf_yasg",
     "storages",
-    "shop"
+    "shop.apps.ShopConfig",
 ]
 
 # === Middleware ===
@@ -62,8 +62,8 @@ MIDDLEWARE = [
 ]
 
 # === URL + WSGI ===
-ROOT_URLCONF = "urls"
-WSGI_APPLICATION = "wsgi.application"
+ROOT_URLCONF = "django_backend.urls"  # Updated to include the correct module path
+WSGI_APPLICATION = "django_backend.wsgi.application"
 
 # === Templates ===
 TEMPLATES = [
@@ -115,7 +115,7 @@ CORS_ALLOW_HEADERS = list(default_headers) + ["authorization"]
 CORS_ALLOW_CREDENTIALS = True
 
 # === Authentication ===
-AUTH_USER_MODEL = "shop.Customer"
+AUTH_USER_MODEL = "shop.Customer"  # Ensure this matches your model definition
 
 REST_FRAMEWORK = {
     "DEFAULT_PERMISSION_CLASSES": ["rest_framework.permissions.IsAuthenticated"],
