@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     "rest_framework_simplejwt.token_blacklist",
     "drf_yasg",
     "storages",
-    "django_backend.shop"
+    "shop"
 ]
 
 # === Middleware ===
