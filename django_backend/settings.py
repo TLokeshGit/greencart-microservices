@@ -62,8 +62,8 @@ MIDDLEWARE = [
 ]
 
 # === URL + WSGI ===
-ROOT_URLCONF = "django_backend.urls"
-WSGI_APPLICATION = "django_backend.wsgi.application"
+ROOT_URLCONF = "urls"
+WSGI_APPLICATION = "wsgi.application"
 
 # === Templates ===
 TEMPLATES = [
@@ -86,9 +86,9 @@ TEMPLATES = [
 # === Static + Media ===
 STATIC_URL = "/static/"
 STATICFILES_DIRS = [
-    BASE_DIR / "shop" / "static",
-    # BASE_DIR / "static",  # ✅ remove or comment this
+    BASE_DIR / "django_backend" / "shop" / "static",
 ]
+
 STATIC_ROOT = BASE_DIR / "staticfiles"
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
